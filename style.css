@@ -1,0 +1,190 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background-image: url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  max-width: 20rem;
+  display: block;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 60%);
+}
+
+.desc p {
+  max-width: 28rem;
+}
+
+.reviews li {
+  background-color: hsla(302, 10%, 53%, 0.123);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reviews li img {
+  margin-bottom: 10px;
+  width: min(4%, 15px);
+}
+
+.reviews p {
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: min(40px);
+  border-radius: 50px;
+}
+
+p span {
+  color: hsl(333, 80%, 67%);
+}
+
+.people-reviews p {
+  margin: 5px;
+  color: white;
+  text-align: left;
+  max-width: 30rem;
+  line-height: 20px;
+}
+
+.people-reviews li {
+  background-color: hsl(300, 43%, 22%);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+  main {
+    padding: 60px 30px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 4.5rem;
+    max-width: 35rem;
+  }
+  .title {
+    justify-content: left;
+    text-align: left;
+  }
+  .desc {
+    justify-content: left;
+    text-align: left;
+  }
+  .desc p {
+    max-width: 45rem;
+    line-height: 25px;
+    margin-bottom: 60px;
+    font-size: 1.8rem;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    width: min(360px, 35%);
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    gap: 5px;
+    justify-content: center;
+  }
+  .reviews li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    width: 90%;
+  }
+  .reviews li img {
+    margin: 0px;
+    width: min(15px, 5%);
+  }
+  .reviews p {
+    margin-left: 30px;
+  }
+  .item2 {
+    margin-left: 20px;
+  }
+  .item3 {
+    margin-left: 40px;
+  }
+
+  .people-reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 30px;
+  }
+
+  .people-reviews li {
+    width: min(230px, 25%);
+  }
+  .p2 {
+    margin-top: 2%;
+  }
+  .p3 {
+    margin-top: 4%;
+  }
+  body {
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+      url("images/bg-pattern-bottom-desktop.svg");
+  }
+}
